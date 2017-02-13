@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/enter_the_coefficients"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Equation 1-->
+        <LinearLayout
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="6">
+
+            <TextView
+                android:text="@string/eqn_1"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/x1"
+                    android:hint="@string/x"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <requestFocus/>
+                </EditText>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginLeft="@dimen/widget_space_margin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/y1"
+                    android:hint="@string/y"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberSigned|numberDecimal"                android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginLeft="@dimen/widget_space_margin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/z1"
+                    android:hint="@string/z"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberSigned|numberDecimal"                android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:text="@string/equals_symbol"
+                android:layout_marginLeft="@dimen/widget_space_margin"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginLeft="@dimen/widget_space_margin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/a"
+                    android:hint="@string/a"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberSigned|numberDecimal"                android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <!-- Equation 2 -->
+        <LinearLayout
+            android:layout_marginTop="@dimen/widget_space_margin"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="6">
+
+            <TextView
+                android:text="@string/eqn_2"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/x2"
+                android:hint="@string/x"
+                android:imeOptions="actionNext"
+                android:inputType="numberSigned|numberDecimal"            android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginLeft="@dimen/widget_space_margin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/y2"
+                    android:hint="@string/y"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberSigned|numberDecimal"                android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginLeft="@dimen/widget_space_margin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/z2"
+                    android:hint="@string/z"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberSigned|numberDecimal"                android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:text="@string/equals_symbol"
+                android:layout_marginLeft="@dimen/widget_space_margin"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginLeft="@dimen/widget_space_margin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/b"
+                    android:hint="@string/b"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberSigned|numberDecimal"                android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <!-- Equation 3 -->
+        <LinearLayout
+            android:layout_marginTop="@dimen/widget_space_margin"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="6">
+
+            <TextView
+                android:text="@string/eqn_3"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/x3"
+                android:hint="@string/x"
+                android:imeOptions="actionNext"
+                android:inputType="numberSigned|numberDecimal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginLeft="@dimen/widget_space_margin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/y3"
+                    android:hint="@string/y"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberSigned|numberDecimal"                android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginLeft="@dimen/widget_space_margin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/z3"
+                    android:hint="@string/z"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberSigned|numberDecimal"                android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:text="@string/equals_symbol"
+                android:layout_marginLeft="@dimen/widget_space_margin"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginLeft="@dimen/widget_space_margin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/c"
+                    android:hint="@string/c"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberSigned|numberDecimal"                android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/initial_value_of_variables"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/widget_space_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="6">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/x0"
+                    android:hint="@string/x"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberSigned|numberDecimal"                android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginLeft="@dimen/widget_space_margin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/y0"
+                    android:hint="@string/y"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberSigned|numberDecimal"                android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginLeft="@dimen/widget_space_margin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/z0"
+                    android:hint="@string/z"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberSigned|numberDecimal"                android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/degree_of_accuracy"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginLeft="@dimen/widget_space_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/decimal_places"
+                android:hint="@string/number_of_decimal_places"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+</ScrollView>

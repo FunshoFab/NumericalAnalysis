@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="funsooyenuga.numericalanalysis.home.HomeFragment">
+
+    <Button
+        android:theme="@style/AppTheme.Button"
+        android:id="@+id/jacobian"
+        android:text="@string/jacobian_method"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:theme="@style/AppTheme.Button"
+        android:id="@+id/gauss_siedel"
+        android:text="@string/gauss_seidel"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
