@@ -2,8 +2,9 @@
 A simple android app for numerical computations. 
 
 ### Linear Equations
-  *Jacobian method
-  *Gauss_Seidel method
+  * Jacobian method
+  * Gauss_Seidel method
+  
   More is on the way!
   
 # Contribution
